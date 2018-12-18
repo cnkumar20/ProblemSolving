@@ -1,5 +1,5 @@
 import itertools as iter
-import math as math
+import math
 setA={'1','5','76','12'}
 setB={'5','2','65','2'}
 setA-setB
@@ -32,11 +32,16 @@ print(factors(6))
 for x in iter.combinations(factors(6),2):
     print(x)
 
-    
+
 def gcd(a,b):
     factA = factors(a)
     factB = factors(b)
     return max(factA.intersection(factB))
 
+
+def prove_pi():
+    return math.pi
+
+print(prove_pi())
 gcd(4,6)
 gcd(12,48)
